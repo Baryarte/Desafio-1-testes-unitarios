@@ -11,6 +11,7 @@
     // "checkJs": true,                             /* Report errors in .js files. */
     // "jsx": "preserve",                           /* Specify JSX code generation: 'preserve', 'react-native', 'react', 'react-jsx' or 'react-jsxdev'. */
     // "declaration": true,                         /* Generates corresponding '.d.ts' file. */
+    "resolveJsonModule": true,
     // "declarationMap": true,                      /* Generates a sourcemap for each corresponding '.d.ts' file. */
     // "sourceMap": true,                           /* Generates corresponding '.map' file. */
     // "outFile": "./",                             /* Concatenate and emit output to single file. */
@@ -53,7 +54,7 @@
     "esModuleInterop": true,                        /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
     // "preserveSymlinks": true,                    /* Do not resolve the real path of symlinks. */
     // "allowUmdGlobalAccess": true,                /* Allow accessing UMD globals from modules. */
-
+    
     /* Source Map Options */
     // "sourceRoot": "",                            /* Specify the location where debugger should locate TypeScript files instead of source locations. */
     // "mapRoot": "",                               /* Specify the location where debugger should locate map files instead of generated locations. */

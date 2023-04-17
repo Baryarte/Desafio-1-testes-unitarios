@@ -16,17 +16,15 @@ interface IRequest {
 @injectable()
 export class AuthenticateUserUseCase {
   constructor(
-    @inject('UsersRepository')
+    @inject("UsersRepository")
     private usersRepository: IUsersRepository,
   ) {}
 
   async execute({ email, password }: IRequest): Promise<IAuthenticateUserResponseDTO> {
     const user = await this.usersRepository.findByEmail(email);
-
     if(!user) {
       throw new IncorrectEmailOrPasswordError();
     }
-
     const passwordMatch = await compare(password, user.password);
 
     if (!passwordMatch) {
